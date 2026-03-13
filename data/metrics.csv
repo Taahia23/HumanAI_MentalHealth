@@ -1,0 +1,4 @@
+Model,Accuracy,F1
+Logistic Regression,0.72,0.7
+SVM,0.75,0.74
+BanglaBERT,0.86,0.85

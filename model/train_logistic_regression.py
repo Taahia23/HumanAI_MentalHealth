@@ -1,8 +1,11 @@
 import pandas as pd
+import joblib
+
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
+
 
 df = pd.read_csv("data/clean_dataset.csv")
 
@@ -24,3 +27,12 @@ model.fit(X_train, y_train)
 pred = model.predict(X_test)
 
 print(classification_report(y_test, pred))
+
+
+# SAVE MODEL
+joblib.dump(model, "models/logistic_model.pkl")
+
+# SAVE VECTORIZER
+joblib.dump(vectorizer, "models/vectorizer.pkl")
+
+print("Model and vectorizer saved successfully")
