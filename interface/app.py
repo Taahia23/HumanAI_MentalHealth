@@ -18,18 +18,29 @@ def predict_emotion(text):
 
     elif pred == "happy":
         message = "Glad to see positive emotion."
-        
+
     else:
         message = "Emotion detected."
 
     return pred, message
 
 
-interface = gr.Interface(
-    fn=predict_emotion,
-    inputs="text",
-    outputs=["text", "text"],
-    title="Bangla Mental Health AI"
-)
+with gr.Blocks() as demo:
 
-interface.launch()
+    gr.Markdown("# Bangla Mental Health Emotion Detector")
+    gr.Markdown("AI system to detect emotions from Bangla text.")
+
+    text_input = gr.Textbox(label="Enter Bangla text")
+
+    emotion_output = gr.Textbox(label="Detected Emotion")
+    message_output = gr.Textbox(label="Suggestion")
+
+    btn = gr.Button("Analyze")
+
+    btn.click(
+        predict_emotion,
+        inputs=text_input,
+        outputs=[emotion_output, message_output]
+    )
+
+demo.launch()

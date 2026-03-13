@@ -14,7 +14,7 @@ def clean_text(text):
     return text
 
 
-df = pd.read_csv("data/Emotion_Bangla_dataset.csv")
+df = pd.read_csv("data/Emotion_Bangla_final_dataset.csv")
 
 df["clean_text"] = df["text"].apply(clean_text)
 
