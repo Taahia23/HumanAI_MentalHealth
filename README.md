@@ -12,3 +12,34 @@ The goal of the project is to demonstrate how AI models can be integrated into a
  - Deployed as a live demo for testing and research purposes
 
 Live link : https://huggingface.co/spaces/taahia26/bangla-mental-health-ai
+
+### Project Architecture
+User Input (Bangla Text)
+        ↓
+Text Preprocessing
+        ↓
+TF-IDF Feature Extraction
+        ↓
+Logistic Regression Classifier
+        ↓
+Emotion Prediction
+        ↓
+Supportive Suggestion
+        ↓
+Gradio Web Interface
+
+### Model Training
+The baseline model was trained using TF-IDF features and a Logistic Regression classifier.
+Emotion classes: happy, neutral, sad, depression
+**Baseline performance:**
+Accuracy: 0.88
+Macro F1 Score: 0.88
+
+### Human–AI Interaction Evaluation
+To evaluate the usability of the prototype, a small user study was conducted.
+Survey link: https://forms.gle/XSyqv1kP1FiY8DGN8
+
+### Future Improvements
+- Larger Bangla mental health dataset
+- Explainable AI for emotion predictions
+- Larger scale user studies for Human–AI interaction analysis
