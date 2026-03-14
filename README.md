@@ -19,7 +19,7 @@ User Input (Bangla Text) &rarr; Text Preprocessing &rarr; TF-IDF Feature Extract
 ### Model Training
 The baseline model was trained using TF-IDF features and a Logistic Regression classifier.
 Emotion classes: happy, neutral, sad, depression
-## Baseline performance:**
+### Baseline performance:
 - Accuracy: 0.88
 - Macro F1 Score: 0.88
 
