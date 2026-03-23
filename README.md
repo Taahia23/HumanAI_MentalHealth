@@ -8,7 +8,7 @@ The goal of the project is to demonstrate how AI models can be integrated into a
 
 ### Features
  - Detects emotional signals from Bangla text inputs
- - Supports multiple emotion classes: **happy, neutral, sad, depression**
+ - Supports multiple emotion classes: **happy, neutral, depression**
  - Provides simple supportive suggestions based on predicted emotion
  - Interactive web interface for user input and feedback
  - Deployed as a live demo for testing and research purposes
